@@ -23,11 +23,20 @@ function initNav() {
   navDonate();
   navContact();
   siteResources();
+  navHomeLogo();
 }
 
 //link to home
 function navHome() {
   $("#home").click(function (e) {
+    $(".content").html(SERVICE.homeContent());
+    console.log("Displayed content");
+  });
+}
+
+//link to home using the logo
+function navHomeLogo() {
+  $("#logo-home").click(function (e) {
     $(".content").html(SERVICE.homeContent());
     console.log("Displayed content");
   });
