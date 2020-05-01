@@ -10,7 +10,7 @@
   h1 {
     margin-top: 150px;
     color: white;
-    font-size: 550%;
+    font-size: 400%;
     font-family: $gothic;
     background-color: $blue-grad;
     border-radius: 50px;
@@ -19,7 +19,7 @@
 
   h2 {
     color: black;
-    font-size: 400%;
+    font-size: 350%;
     font-family: $gothic;
   }
 
@@ -69,10 +69,11 @@
             rgba(95, 124, 253, 0.1),
             rgba(95, 124, 253, 0.1)
           ),
-          url(../images/temp.jpg);
+          url(../images/logo.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        background-color: $blue-grad;
         display: flex;
         align-items: center;
         justify-content: center;

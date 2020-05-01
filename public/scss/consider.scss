@@ -23,7 +23,7 @@
 
   h2 {
     font-family: $gothic;
-    font-size: 300%;
+    font-size: 250%;
     margin-bottom: 25px;
   }
 
@@ -110,6 +110,21 @@
       .right {
         text-align: right;
         margin-right: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .consider-wrapper {
+    h1 {
+      font-size: 200%;
+    }
+
+    .consider-info {
+      .consider-info-holder {
+        display: flex;
+        flex-direction: column;
       }
     }
   }

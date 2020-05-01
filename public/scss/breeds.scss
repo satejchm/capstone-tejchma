@@ -13,7 +13,7 @@
   h1 {
     color: white;
     font-family: $gothic;
-    font-size: 500%;
+    font-size: 400%;
     margin-top: 70px;
     margin-bottom: 30px;
     background-color: rgba(95, 124, 253, 0.6);
@@ -45,7 +45,7 @@
     }
 
     h4 {
-      font-size: 400%;
+      font-size: 350%;
       font-family: $gothic;
     }
     a {
@@ -691,6 +691,20 @@
             rgba(9, 15, 41, 0.2)
           ),
           url(../images/kerryHypo.jpg);
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .breeds-wrapper {
+    h1 {
+      font-size: 200%;
+    }
+
+    .title-holder {
+      h4 {
+        font-size: 200%;
       }
     }
   }

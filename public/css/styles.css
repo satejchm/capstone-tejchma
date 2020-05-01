@@ -177,7 +177,7 @@ nav {
   .breeds-wrapper h1 {
     color: white;
     font-family: "Didact Gothic", sans-serif;
-    font-size: 500%;
+    font-size: 400%;
     margin-top: 70px;
     margin-bottom: 30px;
     background-color: rgba(95, 124, 253, 0.6);
@@ -200,7 +200,7 @@ nav {
     .breeds-wrapper .title-holder p {
       font-size: 25px; }
     .breeds-wrapper .title-holder h4 {
-      font-size: 400%;
+      font-size: 350%;
       font-family: "Didact Gothic", sans-serif; }
     .breeds-wrapper .title-holder a {
       text-decoration: none; }
@@ -384,6 +384,12 @@ nav {
       .breeds-wrapper .breed .kerryHypo:hover {
         background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/kerryHypo.jpg); }
 
+@media (max-width: 800px) {
+  .breeds-wrapper h1 {
+    font-size: 200%; }
+  .breeds-wrapper .title-holder h4 {
+    font-size: 200%; } }
+
 .consider-wrapper {
   width: 100%;
   min-height: 100%;
@@ -405,7 +411,7 @@ nav {
     margin-bottom: 20px; }
   .consider-wrapper h2 {
     font-family: "Didact Gothic", sans-serif;
-    font-size: 300%;
+    font-size: 250%;
     margin-bottom: 25px; }
   .consider-wrapper p {
     margin-top: 15px;
@@ -455,6 +461,13 @@ nav {
         text-align: right;
         margin-right: 40px; }
 
+@media (max-width: 800px) {
+  .consider-wrapper h1 {
+    font-size: 200%; }
+  .consider-wrapper .consider-info .consider-info-holder {
+    display: flex;
+    flex-direction: column; } }
+
 .donate-wrapper {
   width: 100%;
   min-height: 100%;
@@ -466,14 +479,14 @@ nav {
   .donate-wrapper h1 {
     margin-top: 150px;
     color: white;
-    font-size: 550%;
+    font-size: 400%;
     font-family: "Didact Gothic", sans-serif;
     background-color: rgba(95, 124, 253, 0.6);
     border-radius: 50px;
     padding: 10px 30px 10px 30px; }
   .donate-wrapper h2 {
     color: black;
-    font-size: 400%;
+    font-size: 350%;
     font-family: "Didact Gothic", sans-serif; }
   .donate-wrapper .donate {
     min-height: 100%;
@@ -505,10 +518,11 @@ nav {
         border-radius: 15px;
         width: 350px;
         min-height: 350px;
-        background-image: linear-gradient(to right, rgba(95, 124, 253, 0.1), rgba(95, 124, 253, 0.1)), url(../images/temp.jpg);
+        background-image: linear-gradient(to right, rgba(95, 124, 253, 0.1), rgba(95, 124, 253, 0.1)), url(../images/logo.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        background-color: rgba(95, 124, 253, 0.6);
         display: flex;
         align-items: center;
         justify-content: center; }
@@ -787,6 +801,10 @@ nav {
       margin-top: 15px;
       font-size: 25px;
       margin-bottom: 50px; }
+
+@media (max-width: 800px) {
+  .advice-wrapper h1 {
+    font-size: 200%; } }
 
 .resource-wrapper {
   width: 100%;
