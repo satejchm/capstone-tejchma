@@ -242,3 +242,21 @@
     background-size: cover;
   }
 }
+
+@media (max-width: 800px) {
+  .donate-wrapper {
+    h1 {
+      font-size: 200%;
+    }
+
+    h2 {
+      font-size: 200%;
+    }
+  }
+
+  .donate-time-wrapper {
+    h2 {
+      font-size: 300%;
+    }
+  }
+}
