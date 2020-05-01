@@ -1,0 +1,138 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(white, 0.5);
+  display: none;
+  color: white;
+
+  .click-box {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(white, 0.5);
+  }
+  .closeX {
+    font-family: $quicksand;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 50px;
+    color: $blue;
+  }
+
+  .alert-box {
+    position: relative;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: $quicksand;
+    h1,
+    p {
+      color: white;
+    }
+    h1 {
+      font-family: $gothic;
+    }
+    min-width: 800px;
+    max-height: 90%;
+    margin: auto;
+    background-color: $l-blue;
+    border-radius: 10px;
+    font-size: 15px;
+  }
+}
+
+.modal-form {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $blue-grad;
+  font-family: $quicksand;
+
+  .input-holder {
+    margin-top: 100px;
+    margin-bottom: 200px;
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $blue-grad;
+    font-family: $quicksand;
+
+    .verify-donate-button {
+      margin-top: 100px;
+      margin-bottom: 20px;
+      font-size: 25px;
+      font-family: $quicksand;
+      background-color: $blue;
+      border-radius: 26px;
+      padding: 16px 100px;
+      color: white;
+      border-width: 0px;
+      a {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+          border-bottom: 2px solid;
+          padding: 3px;
+        }
+      }
+    }
+    .input {
+      margin-top: 75px;
+      font-size: 25px;
+      height: 50px;
+      width: 500px;
+      outline: 0;
+      color: white;
+      background-color: $l-blue;
+      border-width: 0 0 2px;
+      border-color: $blue;
+      font-family: $quicksand;
+    }
+  }
+}
+
+::placeholder {
+  color: $white;
+}
+
+.header-holder {
+  width: 75%;
+  align-items: left;
+  justify-content: left;
+  margin-top: 150px;
+  font-family: $quicksand;
+  h1 {
+    text-align: left;
+    font-family: $gothic;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-family: $gothic;
+    font-weight: bold;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .create {
+    .input-holder {
+      .input {
+        width: 300px;
+      }
+    }
+  }
+}

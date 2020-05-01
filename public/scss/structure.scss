@@ -1,0 +1,33 @@
+//structure for site
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+section {
+  height: 100%;
+  min-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+.swal-text {
+  padding: 17px;
+  display: block;
+  margin: 22px;
+  text-align: center;
+  color: $blue;
+  font-size: 20px;
+  font-family: $quicksand;
+}

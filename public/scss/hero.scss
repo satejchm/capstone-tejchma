@@ -1,0 +1,40 @@
+.hero-wrapper {
+  width: 100%;
+  min-height: 75vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(95, 124, 253, 0.1),
+      rgba(95, 124, 253, 0.1)
+    ),
+    url(../images/hero-dog.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: white;
+
+  .hero-info {
+    height: 100%;
+    font-family: sans-serif;
+
+    h1 {
+      font-family: $gothic;
+      //font-family: $quicksand;
+      font-size: 400%;
+    }
+
+    h2 {
+      font-size: 200%;
+      font-family: $quicksand;
+    }
+
+    h3 {
+      font-size: 150%;
+      font-family: $quicksand;
+    }
+  }
+}

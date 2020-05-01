@@ -1,0 +1,50 @@
+.footer-wrapper {
+  margin-top: 50px;
+  width: 100%;
+  background-color: $blue-grad;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .footer {
+    margin: 0 auto;
+    height: 80px;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: $quicksand;
+
+    .copyright {
+      justify-content: center;
+      text-transform: lowercase;
+      color: white;
+      font-size: 20px;
+    }
+
+    .resources {
+      justify-content: center;
+      text-transform: lowercase;
+      color: white;
+      font-size: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+}
+
+@media (max-width: 200px) {
+  .footer-wrapper {
+    .footer {
+      flex-direction: column;
+    }
+  }
+}

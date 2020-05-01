@@ -1,0 +1,950 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html,
+body,
+section {
+  height: 100%;
+  min-height: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px; }
+
+.swal-text {
+  padding: 17px;
+  display: block;
+  margin: 22px;
+  text-align: center;
+  color: #041974;
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif; }
+
+nav {
+  width: 100%;
+  padding-right: 50px;
+  height: 70px;
+  position: fixed;
+  background-color: rgba(95, 124, 253, 0.6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-family: "Quicksand", sans-serif; }
+  nav .link-wrap {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center; }
+    nav .link-wrap .links {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center; }
+      nav .link-wrap .links a {
+        font-size: 20px;
+        color: white;
+        text-decoration: none; }
+        nav .link-wrap .links a:hover {
+          color: #041974; }
+    nav .link-wrap .bars {
+      font-size: 200%;
+      position: absolute;
+      top: 55px;
+      right: 50px;
+      display: none;
+      color: white;
+      cursor: pointer; }
+  nav #logo {
+    padding-left: 50px;
+    width: 40%;
+    color: white;
+    text-align: left;
+    justify-content: center;
+    text-align: center; }
+    nav #logo .logo-holder {
+      text-align: center;
+      font-size: 160%;
+      padding: 5px;
+      width: 65px;
+      padding: 10px;
+      border-radius: 40px; }
+      nav #logo .logo-holder:hover {
+        color: #041974;
+        cursor: pointer; }
+
+@media (max-width: 800px) {
+  nav .link-wrap {
+    margin-top: 240px;
+    padding-top: 50px;
+    margin-right: -160px; }
+    nav .link-wrap:hover > .links {
+      display: flex; }
+    nav .link-wrap .links {
+      display: none;
+      flex-direction: column;
+      max-width: 150px;
+      height: 200px;
+      background-color: rgba(95, 124, 253, 0.6); }
+      nav .link-wrap .links a {
+        margin-bottom: 20px; }
+    nav .link-wrap .bars {
+      margin-top: -40px;
+      display: block;
+      z-index: 100px; } }
+
+.hero-wrapper {
+  width: 100%;
+  min-height: 75vh;
+  background-image: linear-gradient(to right, rgba(95, 124, 253, 0.1), rgba(95, 124, 253, 0.1)), url(../images/hero-dog.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: white; }
+  .hero-wrapper .hero-info {
+    height: 100%;
+    font-family: sans-serif; }
+    .hero-wrapper .hero-info h1 {
+      font-family: "Didact Gothic", sans-serif;
+      font-size: 400%; }
+    .hero-wrapper .hero-info h2 {
+      font-size: 200%;
+      font-family: "Quicksand", sans-serif; }
+    .hero-wrapper .hero-info h3 {
+      font-size: 150%;
+      font-family: "Quicksand", sans-serif; }
+
+.footer-wrapper {
+  margin-top: 50px;
+  width: 100%;
+  background-color: rgba(95, 124, 253, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .footer-wrapper .footer {
+    margin: 0 auto;
+    height: 80px;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Quicksand", sans-serif; }
+    .footer-wrapper .footer .copyright {
+      justify-content: center;
+      text-transform: lowercase;
+      color: white;
+      font-size: 20px; }
+    .footer-wrapper .footer .resources {
+      justify-content: center;
+      text-transform: lowercase;
+      color: white;
+      font-size: 20px; }
+    .footer-wrapper .footer a {
+      text-decoration: none;
+      font-size: 20px;
+      color: white; }
+      .footer-wrapper .footer a:hover {
+        color: #041974; }
+
+@media (max-width: 200px) {
+  .footer-wrapper .footer {
+    flex-direction: column; } }
+
+.breeds-wrapper {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+  font-family: "Quicksand", sans-serif; }
+  .breeds-wrapper h1 {
+    color: white;
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 500%;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    background-color: rgba(95, 124, 253, 0.6);
+    border-radius: 50px;
+    padding: 10px 30px 10px 30px; }
+  .breeds-wrapper h2 {
+    margin-bottom: 35px; }
+  .breeds-wrapper p {
+    font-size: 20px; }
+  .breeds-wrapper .title-holder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    min-height: 100%;
+    margin-top: 35px;
+    margin-bottom: 15px; }
+    .breeds-wrapper .title-holder p {
+      font-size: 25px; }
+    .breeds-wrapper .title-holder h4 {
+      font-size: 400%;
+      font-family: "Didact Gothic", sans-serif; }
+    .breeds-wrapper .title-holder a {
+      text-decoration: none; }
+  .breeds-wrapper .breed {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    min-height: 100%;
+    margin: 50px;
+    margin-top: 25px;
+    font-family: "Quicksand", sans-serif; }
+    .breeds-wrapper .breed a {
+      text-decoration: none; }
+    .breeds-wrapper .breed .breed-info {
+      width: 350px;
+      height: 350px;
+      border-radius: 30px;
+      margin-bottom: 30px;
+      margin-right: 20px;
+      background-color: black;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      text-align: right;
+      flex-direction: column;
+      font-family: "Quicksand", sans-serif; }
+      .breeds-wrapper .breed .breed-info h2 {
+        color: white;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-family: "Quicksand", sans-serif; }
+      .breeds-wrapper .breed .breed-info h3 {
+        font-family: sans-serif;
+        display: none;
+        color: white;
+        text-align: center;
+        font-family: "Quicksand", sans-serif; }
+      .breeds-wrapper .breed .breed-info:hover {
+        transition: 1s;
+        width: 450px;
+        height: 450px;
+        background-color: blue; }
+        .breeds-wrapper .breed .breed-info:hover h3 {
+          margin: 20px;
+          display: block; }
+        .breeds-wrapper .breed .breed-info:hover h2 {
+          margin: 20px;
+          color: white; }
+    .breeds-wrapper .breed .pom {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/pom.jfif); }
+      .breeds-wrapper .breed .pom:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/pom.jfif); }
+    .breeds-wrapper .breed .shih {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/shih.jfif); }
+      .breeds-wrapper .breed .shih:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/shih.jfif); }
+    .breeds-wrapper .breed .mini {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/mini.jfif); }
+      .breeds-wrapper .breed .mini:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/mini.jfif); }
+    .breeds-wrapper .breed .span {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/span.jpg); }
+      .breeds-wrapper .breed .span:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/span.jpg); }
+    .breeds-wrapper .breed .corgi {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/corgi.jpeg); }
+      .breeds-wrapper .breed .corgi:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/corgi.jpeg); }
+    .breeds-wrapper .breed .duch {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/dasch.jpg); }
+      .breeds-wrapper .breed .duch:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/dasch.jpg); }
+    .breeds-wrapper .breed .poodle {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/poodle.jpg); }
+      .breeds-wrapper .breed .poodle:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/poodle.jpg); }
+    .breeds-wrapper .breed .bull {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/bull.jpg); }
+      .breeds-wrapper .breed .bull:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/bull.jpg); }
+    .breeds-wrapper .breed .beagle {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/beagle.jpg); }
+      .breeds-wrapper .breed .beagle:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/beagle.jpg); }
+    .breeds-wrapper .breed .york {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/yorkshire.jpg); }
+      .breeds-wrapper .breed .york:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/yorkshire.jpg); }
+    .breeds-wrapper .breed .lab {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/lab.jpg); }
+      .breeds-wrapper .breed .lab:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/lab.jpg); }
+    .breeds-wrapper .breed .german {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/german.jpg); }
+      .breeds-wrapper .breed .german:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/german.jpg); }
+    .breeds-wrapper .breed .york {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/yorkshire.jpg); }
+      .breeds-wrapper .breed .york:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/yorkshire.jpg); }
+    .breeds-wrapper .breed .golden {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/golden.jfif); }
+      .breeds-wrapper .breed .golden:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/golden.jfif); }
+    .breeds-wrapper .breed .stanpoodle {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/stanpoodle.jpg); }
+      .breeds-wrapper .breed .stanpoodle:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/stanpoodle.jpg); }
+    .breeds-wrapper .breed .rott {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/rott.png); }
+      .breeds-wrapper .breed .rott:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/rott.png); }
+    .breeds-wrapper .breed .york {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/yorkshire.jpg); }
+      .breeds-wrapper .breed .york:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/yorkshire.jpg); }
+    .breeds-wrapper .breed .germanshort {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/pointer.jpg); }
+      .breeds-wrapper .breed .germanshort:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/pointer.jpg); }
+    .breeds-wrapper .breed .dane {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/dane.png); }
+      .breeds-wrapper .breed .dane:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/dane.png); }
+    .breeds-wrapper .breed .mastiff {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/mastiff.jpg); }
+      .breeds-wrapper .breed .mastiff:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/mastiff.jpg); }
+    .breeds-wrapper .breed .collie {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/collie.jpg); }
+      .breeds-wrapper .breed .collie:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/collie.jpg); }
+    .breeds-wrapper .breed .bern {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/bern.jfif); }
+      .breeds-wrapper .breed .bern:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/bern.jfif); }
+    .breeds-wrapper .breed .poodleHypo {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/poodleHypo.jpg); }
+      .breeds-wrapper .breed .poodleHypo:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/poodleHypo.jpg); }
+    .breeds-wrapper .breed .malteseHypo {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/malteseHypo.webp); }
+      .breeds-wrapper .breed .malteseHypo:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/malteseHypo.webp); }
+    .breeds-wrapper .breed .bichonHypo {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/bichonHypo.jpg); }
+      .breeds-wrapper .breed .bichonHypo:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/bichonHypo.jpg); }
+    .breeds-wrapper .breed .labradoodleHypo {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/labradoodleHypo.jpg); }
+      .breeds-wrapper .breed .labradoodleHypo:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/labradoodleHypo.jpg); }
+    .breeds-wrapper .breed .portugeseHypo {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/portHypo.jpg); }
+      .breeds-wrapper .breed .portugeseHypo:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/portHypo.jpg); }
+    .breeds-wrapper .breed .softCoatHypo {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/softHypo.jpg); }
+      .breeds-wrapper .breed .softCoatHypo:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/softHypo.jpg); }
+    .breeds-wrapper .breed .chineseHypo {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/chineseHypo.jpg); }
+      .breeds-wrapper .breed .chineseHypo:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/chineseHypo.jpg); }
+    .breeds-wrapper .breed .giantHypo {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/giantHypo.jpg); }
+      .breeds-wrapper .breed .giantHypo:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/giantHypo.jpg); }
+    .breeds-wrapper .breed .afghanHypo {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/afghanHypo.jpg); }
+      .breeds-wrapper .breed .afghanHypo:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/afghanHypo.jpg); }
+    .breeds-wrapper .breed .kerryHypo {
+      background-image: linear-gradient(to right, rgba(9, 15, 41, 0.6), rgba(9, 15, 41, 0.6)), url(../images/kerryHypo.jpg); }
+      .breeds-wrapper .breed .kerryHypo:hover {
+        background-image: linear-gradient(to right, rgba(9, 15, 41, 0.2), rgba(9, 15, 41, 0.2)), url(../images/kerryHypo.jpg); }
+
+.consider-wrapper {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+  font-family: "Quicksand", sans-serif; }
+  .consider-wrapper h1 {
+    background-color: rgba(95, 124, 253, 0.6);
+    border-radius: 50px;
+    padding: 10px 30px 10px 30px;
+    color: white;
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 400%;
+    margin-top: 25px;
+    margin-bottom: 20px; }
+  .consider-wrapper h2 {
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 300%;
+    margin-bottom: 25px; }
+  .consider-wrapper p {
+    margin-top: 15px;
+    font-size: 25px;
+    margin-bottom: 50px; }
+  .consider-wrapper .consider-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    min-height: 100%;
+    margin-top: 25px; }
+    .consider-wrapper .consider-info a {
+      text-decoration: none; }
+    .consider-wrapper .consider-info .consider-info-holder {
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      .consider-wrapper .consider-info .consider-info-holder .consider-image {
+        min-width: 450px;
+        height: 450px;
+        border-radius: 30px;
+        margin-bottom: 30px;
+        margin-right: 40px;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        flex-direction: column; }
+      .consider-wrapper .consider-info .consider-info-holder .commit {
+        background-image: linear-gradient(to right, rgba(95, 124, 253, 0.1), rgba(95, 124, 253, 0.1)), url(../images/commit.jpg); }
+      .consider-wrapper .consider-info .consider-info-holder .groom {
+        background-image: linear-gradient(to right, rgba(95, 124, 253, 0.1), rgba(95, 124, 253, 0.1)), url(../images/dogbath.jpg); }
+      .consider-wrapper .consider-info .consider-info-holder .social {
+        background-image: linear-gradient(to right, rgba(95, 124, 253, 0.1), rgba(95, 124, 253, 0.1)), url(../images/social.jpg); }
+      .consider-wrapper .consider-info .consider-info-holder .vet {
+        background-image: linear-gradient(to right, rgba(95, 124, 253, 0.1), rgba(95, 124, 253, 0.1)), url(../images/vet.jpg); }
+      .consider-wrapper .consider-info .consider-info-holder .right {
+        text-align: right;
+        margin-right: 40px; }
+
+.donate-wrapper {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Quicksand", sans-serif; }
+  .donate-wrapper h1 {
+    margin-top: 150px;
+    color: white;
+    font-size: 550%;
+    font-family: "Didact Gothic", sans-serif;
+    background-color: rgba(95, 124, 253, 0.6);
+    border-radius: 50px;
+    padding: 10px 30px 10px 30px; }
+  .donate-wrapper h2 {
+    color: black;
+    font-size: 400%;
+    font-family: "Didact Gothic", sans-serif; }
+  .donate-wrapper .donate {
+    min-height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 100%;
+    color: white; }
+    .donate-wrapper .donate .image-holder-merch {
+      margin-top: 50px;
+      min-height: 900px;
+      width: 350px;
+      display: flex;
+      font-family: "Quicksand", sans-serif;
+      flex-direction: column; }
+      .donate-wrapper .donate .image-holder-merch h3 {
+        text-align: center;
+        color: black;
+        font-size: 250%; }
+      .donate-wrapper .donate .image-holder-merch p {
+        margin: 5px;
+        color: black;
+        font-size: 25px; }
+      .donate-wrapper .donate .image-holder-merch .merch-image {
+        margin-bottom: 25px;
+        border-radius: 15px;
+        width: 350px;
+        min-height: 350px;
+        background-image: linear-gradient(to right, rgba(95, 124, 253, 0.1), rgba(95, 124, 253, 0.1)), url(../images/temp.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .donate-wrapper .donate .image-holder-merch .merch-image:hover {
+          transition: 1s;
+          width: 400px;
+          height: 400px; }
+    .donate-wrapper .donate .image-holder-food {
+      margin-top: 50px;
+      min-height: 900px;
+      width: 350px;
+      display: flex;
+      font-family: "Quicksand", sans-serif;
+      flex-direction: column; }
+      .donate-wrapper .donate .image-holder-food h3 {
+        text-align: center;
+        color: black;
+        font-size: 250%; }
+      .donate-wrapper .donate .image-holder-food p {
+        margin: 5px;
+        color: black;
+        font-size: 25px; }
+      .donate-wrapper .donate .image-holder-food .food-image {
+        margin-bottom: 25px;
+        border-radius: 15px;
+        width: 350px;
+        min-height: 350px;
+        background-image: linear-gradient(to right, rgba(95, 124, 253, 0.1), rgba(95, 124, 253, 0.1)), url(../images/dogfood.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .donate-wrapper .donate .image-holder-food .food-image:hover {
+          transition: 1s;
+          width: 400px;
+          height: 400px; }
+    .donate-wrapper .donate .image-holder-money {
+      margin-top: 50px;
+      min-height: 900px;
+      width: 350px;
+      display: flex;
+      font-family: "Quicksand", sans-serif;
+      flex-direction: column; }
+      .donate-wrapper .donate .image-holder-money h3 {
+        text-align: center;
+        color: black;
+        font-size: 250%; }
+      .donate-wrapper .donate .image-holder-money p {
+        margin: 5px;
+        width: 300px;
+        color: black;
+        font-size: 25px; }
+      .donate-wrapper .donate .image-holder-money .money-image {
+        margin-bottom: 30px;
+        border-radius: 15px;
+        width: 350px;
+        min-height: 350px;
+        background-image: linear-gradient(to right, rgba(95, 124, 253, 0.1), rgba(95, 124, 253, 0.1)), url(../images/money.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .donate-wrapper .donate .image-holder-money .money-image:hover {
+          transition: 1s;
+          width: 400px;
+          height: 400px; }
+
+.donate-button {
+  background-color: rgba(95, 124, 253, 0.6);
+  border-radius: 5px;
+  border-width: 0px;
+  color: white;
+  font-size: 20px;
+  width: 200px;
+  height: 75px; }
+  .donate-button:hover {
+    border: 5px solid white;
+    width: 205px;
+    height: 80px; }
+
+.donate-time-wrapper {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .donate-time-wrapper h2 {
+    margin-top: 25px;
+    color: white;
+    font-size: 400%;
+    font-family: "Didact Gothic", sans-serif; }
+  .donate-time-wrapper p {
+    font-family: "Quicksand", sans-serif;
+    font-size: 25px; }
+  .donate-time-wrapper h3 {
+    font-size: 250%;
+    font-family: "Didact Gothic", sans-serif; }
+  .donate-time-wrapper .donate-holder {
+    padding: 25px 50px 25px 50px;
+    color: white;
+    display: flex;
+    width: 80%;
+    min-height: 800px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right, rgba(95, 124, 253, 0.6), rgba(95, 124, 253, 0.6)), url(../images/volunteer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: none;
+  color: white; }
+  .modal .click-box {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5); }
+  .modal .closeX {
+    font-family: "Quicksand", sans-serif;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 50px;
+    color: #041974; }
+  .modal .alert-box {
+    position: relative;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    min-width: 800px;
+    max-height: 90%;
+    margin: auto;
+    background-color: #5f7cfd;
+    border-radius: 10px;
+    font-size: 15px; }
+    .modal .alert-box h1,
+    .modal .alert-box p {
+      color: white; }
+    .modal .alert-box h1 {
+      font-family: "Didact Gothic", sans-serif; }
+
+.modal-form {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(95, 124, 253, 0.6);
+  font-family: "Quicksand", sans-serif; }
+  .modal-form .input-holder {
+    margin-top: 100px;
+    margin-bottom: 200px;
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(95, 124, 253, 0.6);
+    font-family: "Quicksand", sans-serif; }
+    .modal-form .input-holder .verify-donate-button {
+      margin-top: 100px;
+      margin-bottom: 20px;
+      font-size: 25px;
+      font-family: "Quicksand", sans-serif;
+      background-color: #041974;
+      border-radius: 26px;
+      padding: 16px 100px;
+      color: white;
+      border-width: 0px; }
+      .modal-form .input-holder .verify-donate-button a {
+        text-decoration: none;
+        color: white; }
+        .modal-form .input-holder .verify-donate-button a:hover {
+          border-bottom: 2px solid;
+          padding: 3px; }
+    .modal-form .input-holder .input {
+      margin-top: 75px;
+      font-size: 25px;
+      height: 50px;
+      width: 500px;
+      outline: 0;
+      color: white;
+      background-color: #5f7cfd;
+      border-width: 0 0 2px;
+      border-color: #041974;
+      font-family: "Quicksand", sans-serif; }
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.6); }
+
+.header-holder {
+  width: 75%;
+  align-items: left;
+  justify-content: left;
+  margin-top: 150px;
+  font-family: "Quicksand", sans-serif; }
+  .header-holder h1 {
+    text-align: left;
+    font-family: "Didact Gothic", sans-serif; }
+  .header-holder h2 {
+    font-size: 20px;
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: bold; }
+
+@media all and (max-width: 768px) {
+  .create .input-holder .input {
+    width: 300px; } }
+
+.advice-wrapper {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+  border-width: 3px;
+  border-color: rgba(95, 124, 253, 0.6);
+  border-radius: 10px;
+  font-family: "Quicksand", sans-serif; }
+  .advice-wrapper h1 {
+    background-color: rgba(95, 124, 253, 0.6);
+    border-radius: 50px;
+    padding: 10px 30px 10px 30px;
+    color: white;
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 400%;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+  .advice-wrapper .advice-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 75%;
+    min-height: 100%;
+    margin-top: 25px;
+    border-style: double;
+    border-width: 5px;
+    border-radius: 30px;
+    border-color: rgba(95, 124, 253, 0.6);
+    padding: 40px 60px 40px 60px; }
+    .advice-wrapper .advice-info a {
+      text-decoration: none; }
+    .advice-wrapper .advice-info h2 {
+      font-family: "Didact Gothic", sans-serif;
+      font-size: 250%;
+      margin-bottom: 25px;
+      text-align: left;
+      align-items: left; }
+    .advice-wrapper .advice-info h3 {
+      font-family: "Didact Gothic", sans-serif;
+      font-size: 100%; }
+    .advice-wrapper .advice-info p {
+      margin-top: 15px;
+      font-size: 25px;
+      margin-bottom: 50px; }
+
+.resource-wrapper {
+  width: 100%;
+  height: 88vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+  border-width: 3px;
+  border-color: rgba(95, 124, 253, 0.6);
+  border-radius: 10px;
+  font-family: "Quicksand", sans-serif; }
+  .resource-wrapper h1 {
+    background-color: rgba(95, 124, 253, 0.6);
+    border-radius: 50px;
+    padding: 10px 30px 10px 30px;
+    color: white;
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 400%;
+    margin-top: 30px;
+    text-align: center; }
+  .resource-wrapper .resource-info {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 75%;
+    height: 800px;
+    margin-top: 25px;
+    border-style: double;
+    border-width: 5px;
+    border-radius: 30px;
+    border-color: rgba(95, 124, 253, 0.6);
+    padding: 40px 60px 40px 60px; }
+    .resource-wrapper .resource-info a {
+      text-decoration: none;
+      font-size: 25px;
+      margin: 50px; }
+    .resource-wrapper .resource-info h2 {
+      font-family: "Didact Gothic", sans-serif;
+      font-size: 250%;
+      margin-bottom: 25px;
+      text-align: left;
+      align-items: left; }
+    .resource-wrapper .resource-info h3 {
+      font-size: 100%; }
+    .resource-wrapper .resource-info p {
+      margin-top: 50px;
+      font-size: 25px;
+      margin-bottom: 50px; }
+
+.contact-form {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #041974;
+  font-family: "Quicksand", sans-serif; }
+  .contact-form .contact-input-holder {
+    margin-top: 125px;
+    margin-bottom: 50px;
+    padding: 50px;
+    border-radius: 30px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(95, 124, 253, 0.6);
+    font-family: "Quicksand", sans-serif; }
+    .contact-form .contact-input-holder h1 {
+      text-align: left;
+      font-family: "Didact Gothic", sans-serif; }
+    .contact-form .contact-input-holder h2 {
+      font-size: 20px;
+      font-family: "Quicksand", sans-serif;
+      font-weight: bold; }
+  .contact-form .verify-question-button {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-family: "Didact Gothic", sans-serif;
+    background-color: #041974;
+    border-radius: 26px;
+    padding: 16px 100px;
+    color: white;
+    border-width: 0px; }
+    .contact-form .verify-question-button a {
+      text-decoration: none;
+      color: white; }
+      .contact-form .verify-question-button a:hover {
+        border-bottom: 2px solid;
+        padding: 3px; }
+  .contact-form .input {
+    margin-top: 75px;
+    font-size: 25px;
+    height: 50px;
+    width: 500px;
+    outline: 0;
+    color: white;
+    background-color: #5f7cfd;
+    border-width: 0 0 2px;
+    border-color: #041974;
+    border-radius: 10px;
+    font-family: "Quicksand", sans-serif; }
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.6); }
+
+@media all and (max-width: 768px) {
+  .contact-form .contact-input-holder .input {
+    width: 300px; } }
+
+.contact-shelter {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #041974;
+  font-family: "Quicksand", sans-serif; }
+  .contact-shelter .contact-shelter-holder {
+    margin-bottom: 50px;
+    border-radius: 30px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Quicksand", sans-serif; }
+    .contact-shelter .contact-shelter-holder h1 {
+      font-family: "Didact Gothic", sans-serif; }
+    .contact-shelter .contact-shelter-holder h2 {
+      font-size: 20px;
+      font-family: "Quicksand", sans-serif;
+      font-weight: bold; }
+    .contact-shelter .contact-shelter-holder .contact-button {
+      margin-top: 25px;
+      margin-bottom: 20px;
+      font-size: 25px;
+      font-family: "Quicksand", sans-serif;
+      background-color: #041974;
+      border-radius: 26px;
+      padding: 16px 100px;
+      color: white;
+      border-width: 0px; }
+      .contact-shelter .contact-shelter-holder .contact-button a {
+        text-decoration: none;
+        color: white; }
+        .contact-shelter .contact-shelter-holder .contact-button a:hover {
+          border-bottom: 2px solid;
+          padding: 3px; }

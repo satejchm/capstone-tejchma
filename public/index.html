@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AW-Dopt!</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Sarah Tejchma capstone -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Didact+Gothic|Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <!--page favicon-->
+    <link
+      rel="shortcut icon"
+      href="images/favicon-aw.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!--create nav for the page-->
+    <nav>
+      <div id="logo">
+        <div class="logo-holder">
+          <a href="home">
+            <img
+              src="images/logo2.png"
+              style="width: 150px; height: 50px;"
+              alt="logo"
+          /></a>
+        </div>
+      </div>
+      <div class="link-wrap">
+        <div class="links">
+          <a id="home" href="#">home</a>
+          <a id="breeds" href="#">breeds</a>
+          <a id="donate" href="#">donate</a>
+          <a id="contact" href="#">contact</a>
+        </div>
+        <!--create bars to open navigation when screen is smaller-->
+        <div class="bars">
+          <i class="fas fa-bars" alt="bars"></i>
+        </div>
+      </div>
+    </nav>
+    <!--create div to hold content for each section-->
+    <div class="content"></div>
+
+    <div class="modal">
+      <div class="click-box closeModal">
+        <div class="closeX closeModal">X</div>
+      </div>
+      <div class="alert-box"></div>
+    </div>
+
+    <!--create footer for page-->
+    <div class="footer-wrapper">
+      <div class="footer">
+        <div class="copyright">Copyright © 2020 Sarah Tejchma</div>
+        <div class="resources">
+          <a id="resource-link" href="#">site resources</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.14.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.14.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.14.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.8.1/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/7.14.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.14.1/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <script src="lib/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/service.js"></script>
+    <script src="app/utility.js"></script>
+  </body>
+</html>

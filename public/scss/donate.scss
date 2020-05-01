@@ -1,0 +1,243 @@
+.donate-wrapper {
+  width: 100%;
+  min-height: 100%;
+  //margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: $quicksand;
+  h1 {
+    margin-top: 150px;
+    color: white;
+    font-size: 550%;
+    font-family: $gothic;
+    background-color: $blue-grad;
+    border-radius: 50px;
+    padding: 10px 30px 10px 30px;
+  }
+
+  h2 {
+    color: black;
+    font-size: 400%;
+    font-family: $gothic;
+  }
+
+  .donate {
+    min-height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 100%;
+    //margin-top: 25px;
+    color: white;
+
+    //merch image for donation
+    .image-holder-merch {
+      margin-top: 50px;
+
+      min-height: 900px;
+      width: 350px;
+      display: flex;
+
+      font-family: $quicksand;
+      flex-direction: column;
+
+      h3 {
+        text-align: center;
+        color: black;
+        font-size: 250%;
+      }
+
+      p {
+        margin: 5px;
+        color: black;
+        font-size: 25px;
+      }
+
+      .merch-image {
+        margin-bottom: 25px;
+        border-radius: 15px;
+        width: 350px;
+        min-height: 350px;
+
+        background-image: linear-gradient(
+            to right,
+            rgba(95, 124, 253, 0.1),
+            rgba(95, 124, 253, 0.1)
+          ),
+          url(../images/temp.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          transition: 1s;
+          width: 400px;
+          height: 400px;
+        }
+      }
+    }
+
+    .image-holder-food {
+      margin-top: 50px;
+      min-height: 900px;
+      width: 350px;
+      display: flex;
+      font-family: $quicksand;
+      flex-direction: column;
+
+      h3 {
+        text-align: center;
+        color: black;
+        font-size: 250%;
+      }
+
+      p {
+        margin: 5px;
+        color: black;
+        font-size: 25px;
+      }
+      .food-image {
+        margin-bottom: 25px;
+        border-radius: 15px;
+        width: 350px;
+        min-height: 350px;
+        background-image: linear-gradient(
+            to right,
+            rgba(95, 124, 253, 0.1),
+            rgba(95, 124, 253, 0.1)
+          ),
+          url(../images/dogfood.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          transition: 1s;
+          width: 400px;
+          height: 400px;
+        }
+      }
+    }
+
+    .image-holder-money {
+      margin-top: 50px;
+      //width: 100%;
+      min-height: 900px;
+      width: 350px;
+      display: flex;
+      font-family: $quicksand;
+      flex-direction: column;
+
+      h3 {
+        text-align: center;
+        color: black;
+        font-size: 250%;
+      }
+
+      p {
+        margin: 5px;
+        width: 300px;
+        color: black;
+        font-size: 25px;
+      }
+      .money-image {
+        margin-bottom: 30px;
+        border-radius: 15px;
+        width: 350px;
+        min-height: 350px;
+        background-image: linear-gradient(
+            to right,
+            rgba(95, 124, 253, 0.1),
+            rgba(95, 124, 253, 0.1)
+          ),
+          url(../images/money.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          transition: 1s;
+          width: 400px;
+          height: 400px;
+        }
+      }
+    }
+  }
+}
+
+.donate-button {
+  background-color: $blue-grad;
+  border-radius: 5px;
+  border-width: 0px;
+  color: white;
+  font-size: 20px;
+  width: 200px;
+  height: 75px;
+
+  &:hover {
+    border: 5px solid white;
+    width: 205px;
+    height: 80px;
+  }
+}
+
+.donate-time-wrapper {
+  width: 100%;
+  min-height: 100%;
+  //margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h2 {
+    margin-top: 25px;
+    color: white;
+    font-size: 400%;
+    font-family: $gothic;
+  }
+
+  p {
+    font-family: $quicksand;
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 250%;
+    font-family: $gothic;
+  }
+  .donate-holder {
+    padding: 25px 50px 25px 50px;
+    color: white;
+    display: flex;
+    width: 80%;
+    min-height: 800px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(
+        to right,
+        rgba(95, 124, 253, 0.6),
+        rgba(95, 124, 253, 0.6)
+      ),
+      url(../images/volunteer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

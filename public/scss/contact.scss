@@ -1,0 +1,138 @@
+.contact-form {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $blue;
+  font-family: $quicksand;
+
+  .contact-input-holder {
+    margin-top: 125px;
+    margin-bottom: 50px;
+    padding: 50px;
+    border-radius: 30px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $blue-grad;
+    font-family: $quicksand;
+
+    h1 {
+      text-align: left;
+      font-family: $gothic;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-family: $quicksand;
+      font-weight: bold;
+    }
+  }
+
+  .verify-question-button {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-family: $gothic;
+    background-color: $blue;
+    border-radius: 26px;
+    padding: 16px 100px;
+    color: white;
+    border-width: 0px;
+    a {
+      text-decoration: none;
+      color: white;
+
+      &:hover {
+        border-bottom: 2px solid;
+        padding: 3px;
+      }
+    }
+  }
+  .input {
+    margin-top: 75px;
+    font-size: 25px;
+    height: 50px;
+    width: 500px;
+    outline: 0;
+    color: white;
+    background-color: $l-blue;
+    border-width: 0 0 2px;
+    border-color: $blue;
+    border-radius: 10px;
+    font-family: $quicksand;
+  }
+}
+
+::placeholder {
+  color: $white;
+}
+
+@media all and (max-width: 768px) {
+  .contact-form {
+    .contact-input-holder {
+      .input {
+        width: 300px;
+      }
+    }
+  }
+}
+
+.contact-shelter {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $blue;
+  font-family: $quicksand;
+
+  .contact-shelter-holder {
+    margin-bottom: 50px;
+    border-radius: 30px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $quicksand;
+
+    h1 {
+      font-family: $gothic;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-family: $quicksand;
+      font-weight: bold;
+    }
+
+    .contact-button {
+      margin-top: 25px;
+      margin-bottom: 20px;
+      font-size: 25px;
+      font-family: $quicksand;
+      background-color: $blue;
+      border-radius: 26px;
+      padding: 16px 100px;
+      color: white;
+      border-width: 0px;
+      a {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+          border-bottom: 2px solid;
+          padding: 3px;
+        }
+      }
+    }
+  }
+}

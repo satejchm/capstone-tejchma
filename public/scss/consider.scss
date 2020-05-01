@@ -1,0 +1,116 @@
+.consider-wrapper {
+  width: 100%;
+  min-height: 100%;
+  //margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+  font-family: $quicksand;
+
+  h1 {
+    background-color: rgba(95, 124, 253, 0.6);
+    border-radius: 50px;
+    padding: 10px 30px 10px 30px;
+    color: white;
+    font-family: $gothic;
+    font-size: 400%;
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-family: $gothic;
+    font-size: 300%;
+    margin-bottom: 25px;
+  }
+
+  p {
+    margin-top: 15px;
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+
+  .consider-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    min-height: 100%;
+    margin-top: 25px;
+
+    a {
+      text-decoration: none;
+    }
+
+    .consider-info-holder {
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+
+      .consider-image {
+        min-width: 450px;
+        height: 450px;
+        border-radius: 30px;
+        margin-bottom: 30px;
+        margin-right: 40px;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        flex-direction: column;
+      }
+
+      .commit {
+        background-image: linear-gradient(
+            to right,
+            rgba(95, 124, 253, 0.1),
+            rgba(95, 124, 253, 0.1)
+          ),
+          url(../images/commit.jpg);
+      }
+
+      .groom {
+        background-image: linear-gradient(
+            to right,
+            rgba(95, 124, 253, 0.1),
+            rgba(95, 124, 253, 0.1)
+          ),
+          url(../images/dogbath.jpg);
+      }
+
+      .social {
+        background-image: linear-gradient(
+            to right,
+            rgba(95, 124, 253, 0.1),
+            rgba(95, 124, 253, 0.1)
+          ),
+          url(../images/social.jpg);
+      }
+
+      .vet {
+        background-image: linear-gradient(
+            to right,
+            rgba(95, 124, 253, 0.1),
+            rgba(95, 124, 253, 0.1)
+          ),
+          url(../images/vet.jpg);
+      }
+
+      .right {
+        text-align: right;
+        margin-right: 40px;
+      }
+    }
+  }
+}

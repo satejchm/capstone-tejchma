@@ -1,0 +1,11 @@
+{
+  "name": "capstone-tejchma",
+  "version": "1.0.0",
+  "description": "capstone project sarah tejchma",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass public/scss/styles.scss public/css/styles.css -w"
+  },
+  "author": "sarah tejchma",
+  "license": "ISC"
+}

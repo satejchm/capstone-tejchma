@@ -1,0 +1,697 @@
+.breeds-wrapper {
+  width: 100%;
+  min-height: 100%;
+  //margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+  font-family: $quicksand;
+
+  h1 {
+    color: white;
+    font-family: $gothic;
+    font-size: 500%;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    background-color: rgba(95, 124, 253, 0.6);
+    border-radius: 50px;
+    padding: 10px 30px 10px 30px;
+  }
+
+  h2 {
+    margin-bottom: 35px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .title-holder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    min-height: 100%;
+    margin-top: 35px;
+    margin-bottom: 15px;
+
+    p {
+      font-size: 25px;
+    }
+
+    h4 {
+      font-size: 400%;
+      font-family: $gothic;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .breed {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    min-height: 100%;
+    margin: 50px;
+    margin-top: 25px;
+    font-family: $quicksand;
+
+    a {
+      text-decoration: none;
+    }
+
+    .breed-info {
+      width: 350px;
+      height: 350px;
+      border-radius: 30px;
+      margin-bottom: 30px;
+      margin-right: 20px;
+      background-color: black;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      text-align: right;
+      flex-direction: column;
+      font-family: $quicksand;
+
+      h2 {
+        color: white;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-family: $quicksand;
+      }
+
+      h3 {
+        font-family: sans-serif;
+        display: none;
+        color: white;
+        text-align: center;
+        font-family: $quicksand;
+      }
+
+      &:hover {
+        transition: 1s;
+        width: 450px;
+        height: 450px;
+        background-color: blue;
+        h3 {
+          margin: 20px;
+          display: block;
+        }
+        h2 {
+          margin: 20px;
+          color: white;
+        }
+      }
+    }
+
+    .pom {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/pom.jfif);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/pom.jfif);
+      }
+    }
+
+    .shih {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/shih.jfif);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/shih.jfif);
+      }
+    }
+
+    .mini {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/mini.jfif);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/mini.jfif);
+      }
+    }
+
+    .span {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/span.jpg);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/span.jpg);
+      }
+    }
+
+    .corgi {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/corgi.jpeg);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/corgi.jpeg);
+      }
+    }
+
+    .duch {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/dasch.jpg);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/dasch.jpg);
+      }
+    }
+
+    .poodle {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/poodle.jpg);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/poodle.jpg);
+      }
+    }
+
+    .bull {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/bull.jpg);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/bull.jpg);
+      }
+    }
+
+    .beagle {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/beagle.jpg);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/beagle.jpg);
+      }
+    }
+
+    .york {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/yorkshire.jpg);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/yorkshire.jpg);
+      }
+    }
+
+    .lab {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/lab.jpg);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/lab.jpg);
+      }
+    }
+
+    .german {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/german.jpg);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/german.jpg);
+      }
+    }
+
+    .york {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/yorkshire.jpg);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/yorkshire.jpg);
+      }
+    }
+
+    .golden {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/golden.jfif);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/golden.jfif);
+      }
+    }
+
+    .stanpoodle {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/stanpoodle.jpg);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/stanpoodle.jpg);
+      }
+    }
+
+    .rott {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/rott.png);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/rott.png);
+      }
+    }
+
+    .york {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/yorkshire.jpg);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/yorkshire.jpg);
+      }
+    }
+
+    .germanshort {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/pointer.jpg);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/pointer.jpg);
+      }
+    }
+
+    .dane {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/dane.png);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/dane.png);
+      }
+    }
+
+    .mastiff {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/mastiff.jpg);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/mastiff.jpg);
+      }
+    }
+
+    .collie {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/collie.jpg);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/collie.jpg);
+      }
+    }
+
+    .bern {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/bern.jfif);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/bern.jfif);
+      }
+    }
+
+    //hypoallergenic breeds
+    .poodleHypo {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/poodleHypo.jpg);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/poodleHypo.jpg);
+      }
+    }
+
+    .malteseHypo {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/malteseHypo.webp);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/malteseHypo.webp);
+      }
+    }
+
+    .bichonHypo {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/bichonHypo.jpg);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/bichonHypo.jpg);
+      }
+    }
+
+    .labradoodleHypo {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/labradoodleHypo.jpg);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/labradoodleHypo.jpg);
+      }
+    }
+
+    .portugeseHypo {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/portHypo.jpg);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/portHypo.jpg);
+      }
+    }
+
+    .softCoatHypo {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/softHypo.jpg);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/softHypo.jpg);
+      }
+    }
+
+    .chineseHypo {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/chineseHypo.jpg);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/chineseHypo.jpg);
+      }
+    }
+
+    .giantHypo {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/giantHypo.jpg);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/giantHypo.jpg);
+      }
+    }
+
+    .afghanHypo {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/afghanHypo.jpg);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/afghanHypo.jpg);
+      }
+    }
+
+    .kerryHypo {
+      background-image: linear-gradient(
+          to right,
+          rgba(9, 15, 41, 0.6),
+          rgba(9, 15, 41, 0.6)
+        ),
+        url(../images/kerryHypo.jpg);
+
+      &:hover {
+        background-image: linear-gradient(
+            to right,
+            rgba(9, 15, 41, 0.2),
+            rgba(9, 15, 41, 0.2)
+          ),
+          url(../images/kerryHypo.jpg);
+      }
+    }
+  }
+}

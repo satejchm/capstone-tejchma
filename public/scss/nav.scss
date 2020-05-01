@@ -1,0 +1,99 @@
+nav {
+  width: 100%;
+  padding-right: 50px;
+  height: 70px;
+  position: fixed;
+  background-color: $blue-grad;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-family: $quicksand;
+  .link-wrap {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    .links {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      a {
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+
+    .bars {
+      font-size: 200%;
+      position: absolute;
+      top: 55px;
+      right: 50px;
+      display: none;
+      color: white;
+      cursor: pointer;
+    }
+  }
+  #logo {
+    padding-left: 50px;
+    width: 40%;
+    color: white;
+    text-align: left;
+    justify-content: center;
+    text-align: center;
+
+    .logo-holder {
+      text-align: center;
+      font-size: 160%;
+      padding: 5px;
+      width: 65px;
+      //background-color: blue;\
+      padding: 10px;
+      border-radius: 40px;
+
+      &:hover {
+        color: $blue;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  nav {
+    .link-wrap {
+      margin-top: 240px;
+      padding-top: 50px;
+      margin-right: -160px;
+
+      &:hover > .links {
+        display: flex;
+      }
+
+      .links {
+        display: none;
+        flex-direction: column;
+        max-width: 150px;
+        height: 200px;
+        background-color: $blue-grad;
+        a {
+          margin-bottom: 20px;
+        }
+      }
+
+      .bars {
+        margin-top: -40px;
+        display: block;
+        z-index: 100px;
+      }
+    }
+  }
+}
